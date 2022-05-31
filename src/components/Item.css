@@ -1,0 +1,41 @@
+.item{
+    color: rgb(250, 1, 117);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.item-list li{
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    padding: 30px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* .item-list-total{
+    background: rgb(241, 193, 218);
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.068);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+    display: block;
+} */
+
+.expense{
+    border-right: 5px solid rgb(234, 28, 73);
+}
+
+.income{
+    border-right: 5px solid rgb(56, 163, 206);
+}
