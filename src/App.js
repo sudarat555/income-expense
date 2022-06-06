@@ -7,7 +7,7 @@ import FormComponent from "./components/FormComponent";
 import DataContext from "./data/DataContext"; 
 // import { useContext } from "react";
 import ReportComponent from "./components/ReportComponent";
-import { BrowserRouter as Link, Routes } from "react-router-dom"
+// import { BrowserRouter as Link, Routes } from "react-router-dom"
 
 // const Title = () =>
 //   <h1 className="item">
@@ -19,6 +19,11 @@ const Item = (props) => {
   const status = amount < 0 ? "expense" : "income"
   const symbol = amount < 0 ? "-" : "+"
   // const name = useContext(DataContext)
+  // const deleteData = () =>{
+  //   if({status} === expense){
+
+  //   }
+  // } 
   return (
     <li className={status}>{title}<span>{symbol}{Math.abs(amount)}</span></li>
   );
@@ -92,7 +97,7 @@ function App() {
       <div className="container">
         <h1 className="item">โปรแกรมรายรับ - รายจ่าย</h1>
         
-        <Routes>
+        {/* <Routes>
         <div>
           <ul className="horizontal-memu">
             <li>
@@ -103,7 +108,7 @@ function App() {
             </li>
           </ul>
         </div>
-        </Routes>
+        </Routes> */}
       
         {/* {showReport && <ReportComponent/>} */}
         <ReportComponent/>
